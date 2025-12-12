@@ -6,9 +6,13 @@ console.log(add(0, 0));
 console.log(add(2, 2));
 console.log(add(2, 6));
 
-const subtract = function() {
-	
+const subtract = function(a, b) {
+	return a - b;
 };
+
+console.log(subtract(10, 4));
+console.log(subtract(-10, -4));
+console.log(subtract(-8, 7));
 
 const sum = function() {
 	
