@@ -28,9 +28,17 @@ console.log([7]);
 console.log([7, 11]);
 console.log([1, 3, 5, 7, 9]);
 
-const multiply = function() {
+const multiply = function(numbers) {
+  let total = 1;
+  for (let i = 0; i < numbers.length; i++) {
+    total = total * numbers[i];
+  };
 
+  return total;
 };
+
+console.log([2, 4]);
+console.log([2, 4, 6, 8, 10, 12, 14]);
 
 const power = function() {
 	
