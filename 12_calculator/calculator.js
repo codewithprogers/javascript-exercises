@@ -40,13 +40,27 @@ const multiply = function(numbers) {
 console.log([2, 4]);
 console.log([2, 4, 6, 8, 10, 12, 14]);
 
-const power = function() {
-	
+const power = function(a, b) {
+	return a ** b;
 };
 
-const factorial = function() {
-	
+console.log(power(4, 3));
+console.log(power(3, 10));
+
+const factorial = function(number) {
+	let result = 1;
+  for (let i = 1; i <= number; i++) {
+    result = result * i;
+  };
+
+  return result;
 };
+
+console.log(0);
+console.log(1);
+console.log(2);
+console.log(5);
+console.log(10);
 
 // Do not edit below this line
 module.exports = {
