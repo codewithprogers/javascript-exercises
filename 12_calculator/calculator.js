@@ -1,6 +1,10 @@
-const add = function() {
-	
+const add = function(a, b) {
+	return a + b;
 };
+
+console.log(add(0, 0));
+console.log(add(2, 2));
+console.log(add(2, 6));
 
 const subtract = function() {
 	
