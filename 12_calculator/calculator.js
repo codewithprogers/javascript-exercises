@@ -14,9 +14,19 @@ console.log(subtract(10, 4));
 console.log(subtract(-10, -4));
 console.log(subtract(-8, 7));
 
-const sum = function() {
-	
+const sum = function(numbers) {
+  let total = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    total = total + numbers[i];
+  };
+
+  return total;
 };
+
+console.log([]);
+console.log([7]);
+console.log([7, 11]);
+console.log([1, 3, 5, 7, 9]);
 
 const multiply = function() {
 
