@@ -23,11 +23,7 @@ const findTheOldest = function(arr) {
     let oldestAge = firstPersonEndYear - first.yearOfBirth;
     let currentAge = currentPersonEndYear - current.yearOfBirth;
     
-    if (currentAge > oldestAge) {
-      return current;
-    } else {
-      return first;
-    }
+    return oldestAge < currentAge ? current : first;
   }, arr[0]);
 };
 
