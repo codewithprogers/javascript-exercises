@@ -2,7 +2,6 @@ const people = [
   {
     name: "Carly",
     yearOfBirth: 2018,
-    yearOfDeath: 1970,
   },
   {
     name: "Ray",
@@ -18,8 +17,11 @@ const people = [
 
 const findTheOldest = function(arr) {
   return arr.reduce((first, current) => {
-    let oldestAge = first.yearOfDeath - first.yearOfBirth;
-    let currentAge = current.yearOfDeath - current.yearOfBirth;
+    let firstPersonEndYear = first.yearOfDeath || ((new Date()).getFullYear());
+    let currentPersonEndYear = current.yearOfDeath || ((new Date()).getFullYear());
+
+    let oldestAge = firstPersonEndYear - first.yearOfBirth;
+    let currentAge = currentPersonEndYear - current.yearOfBirth;
     
     if (currentAge > oldestAge) {
       return current;
